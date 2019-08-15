@@ -1,0 +1,40 @@
+{
+  "name": "three-js-mesh-world-normal-material",
+  "version": "1.0.0",
+  "description": "Implements a MeshWorldNormalMaterial packing normals in RGB values like MeshNormalMaterial but for world space normals instead of view space normals.",
+  "main": "src/MeshWorldNormalMaterial.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "three-full": "16.0.1"
+  },
+  "devDependencies": {
+    "fs-extra": "^7.0.1",
+    "rollup": "^0.67.1",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-terser": "^3.0.0",
+    "rollup-plugin-prettier": "^0.6.0"
+  },
+  "files": [
+    "src/*",
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximeq/three-js-mesh-world-normal-material.git"
+  },
+  "keywords": [
+    "threejs"
+  ],
+  "browser": "./dist/browser/three-js-mesh-world-normal-material.js",
+  "author": "Maxime Quiblier <maximequiblier@gmail.com>",
+  "license": "MIT",
+  "hash": "cbb66061ffd05bc5f6673756895b3f6f03e7202a",
+  "bugs": {
+    "url": "https://github.com/maximeq/three-js-mesh-world-normal-material/issues"
+  },
+  "homepage": "https://github.com/maximeq/three-js-mesh-world-normal-material#readme"
+}
