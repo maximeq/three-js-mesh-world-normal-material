@@ -1,5 +1,9 @@
 var THREE = require("three-full");
 
+if(window && !window.THREEExtraBuiltInUniforms){
+    console.warn("Package three-js-extra-built-in-uniforms does not seem to be loaded (THREEExtraBuiltInUniforms is undefined). Don't forget to manage extra uniforms updates manually.");
+}
+
 /**
  * @author Maxime Quiblier / http://github.com/maximeq
  *

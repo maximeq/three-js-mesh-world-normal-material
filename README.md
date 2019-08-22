@@ -3,7 +3,9 @@
 Implements a MeshWorldNormalMaterial packing normals in RGB values like MeshNormalMaterial but for world space normals instead of view space normals.
 
 This material can be used like THREE.MeshNormalMaterial, with the same parameters. However, it adds a uniform which is not among the built-in uniforms of THREE : viewMatrixInverse.
-This uniform must be set before render. You can do it manually (like in the scene.onBeforeRender callback), or you can use MeshWorldNormalMaterial.updateMeshOnBeforeRender on the meshes using this material.
+This uniform must be set before render.
+An easy way to do so is to use the package three-js-extra-built-in-uniforms, which is a bit hacky but provides automatic updates for uniforms like viewMatrixInverse.
+Or you can do it manually (like in the scene.onBeforeRender callback), or you can use MeshWorldNormalMaterial.updateMeshOnBeforeRender on the meshes using this material.
 
 ```javascript
 // Example using THREE.Mesh.onBeforeRender
