@@ -6,8 +6,13 @@
 
     threeFull = threeFull && threeFull.hasOwnProperty('default') ? threeFull['default'] : threeFull;
 
-    if(window && !window.THREEExtraBuiltInUniforms){
-        console.warn("Package three-js-extra-built-in-uniforms does not seem to be loaded (THREEExtraBuiltInUniforms is undefined). Don't forget to manage extra uniforms updates manually.");
+    try {
+        if(window && !window.THREEExtraBuiltInUniforms){
+            console.warn("Package three-js-extra-built-in-uniforms does not seem to be loaded (THREEExtraBuiltInUniforms is undefined). Don't forget to manage extra uniforms updates manually.");
+        }
+    }
+    catch( e ) {
+        // we are on node, so the warning does not make sens
     }
 
     /**

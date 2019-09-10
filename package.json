@@ -1,6 +1,6 @@
 {
   "name": "three-js-mesh-world-normal-material",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Implements a MeshWorldNormalMaterial packing normals in RGB values like MeshNormalMaterial but for world space normals instead of view space normals.",
   "main": "src/MeshWorldNormalMaterial.js",
   "scripts": {
