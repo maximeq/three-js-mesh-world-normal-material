@@ -1,8 +1,8 @@
 var THREE = require("three-full");
 
 try {
-    if(window && !window.THREEExtraBuiltInUniforms){
-        console.warn("Package three-js-extra-built-in-uniforms does not seem to be loaded (THREEExtraBuiltInUniforms is undefined). Don't forget to manage extra uniforms updates manually.");
+    if(window && !window.THREEExtraBuiltInUniforms && !THREE.ExtraBuiltInUniforms){
+        console.warn("Package three-js-extra-built-in-uniforms does not seem to be loaded (THREE.ExtraBuiltInUniforms is undefined). Don't forget to manage extra uniforms updates manually.");
     }
 }
 catch( e ) {
