@@ -1,4 +1,4 @@
-# three-js-cone
+# three-mesh-world-normal-material
 
 Implements a MeshWorldNormalMaterial packing normals in RGB values like MeshNormalMaterial but for world space normals instead of view space normals.
 
