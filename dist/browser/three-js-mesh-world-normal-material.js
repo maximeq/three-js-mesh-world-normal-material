@@ -63,6 +63,8 @@
     	this.morphTargets = false;
     	this.morphNormals = false;
 
+    	this.isMeshNormalMaterial = true;
+
     	threeFull.ShaderMaterial.call( this, parameters);
 
     }
